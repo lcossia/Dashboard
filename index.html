@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" >
+  <head>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" href="css/style.css">
+   <!-- Boxicons Link -->
+   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap')"
+   rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+ <!-- Barra Iconos -->
+  <div class="sidebar">
+    <div class="logo-details">
+      <span class="logo_name"> Passage</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="index.html" class="active">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name1"> Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-box' ></i>
+            <span class="links_name">Productos</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-list-ul' ></i>
+            <span class="links_name">Lista de Pedidos</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-pie-chart-alt-2' ></i>
+            <span class="links_name">Estadisticas de ventas</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-coin-stack' ></i>
+            <span class="links_name">Stock</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="links_name">Total ventas</span>
+          </a>
+        </li>
+        <!--INTEGRANTES DEL TRABAJO FINAL-->
+        <li>
+          <a href="members.html" >
+          <i class='bx bx-user' ></i>
+          <span class="links_name1">Nuestro Equipo </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-message' ></i>
+            <span class="links_name">Mensajes</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-heart' ></i>
+            <span class="links_name">Favoritos</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-cog' ></i>
+            <span class="links_name">Configuracion</span>
+          </a>
+        </li>
+        <li class="log_out">
+          <a href="https://www.google.com/?hl=es">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name1">Salir</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <!-- Barra Titulo  Navegador y Usuario -->
+  <section class="home-section">
+    <nav>
+      <div class="dashboard"> <h1>Trabajo Final Dashboard</h1> </div>
+      <div class="search-box">
+        <input type="text" placeholder="Buscador...">
+        <i class='bx bx-search' ></i>
+      </div>
+      <button class="profile-details">            
+        <a href="formulario1.html" > USUARIO </a>
+        
+      </button>
+    </nav>
+     <!-- WIDGET SIMPLE PARA CONTROL DE VENTAS PEDIDOS DEUDORES Y DEVOLUCIONES -->
+    <div class="home-content">
+      <div class="overview-boxes">
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Total Pedidos</div>
+            <div class="number">40876</div>
+            <div class="indicator">
+              <i class='bx bx-up-arrow-alt'></i>
+              <span class="text">En el mes</span>
+            </div>
+          </div>
+          <i class='bx bx-cart-alt cart'></i>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Total Ventas</div>
+            <div class="number">38876</div>
+            <div class="indicator">
+              <i class='bx bx-up-arrow-alt'></i>
+              <span class="text">En el mes</span>
+            </div>
+          </div>
+          <i class='bx bxs-cart-add cart two' ></i>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Total Deudores</div>
+            <div class="number">$12876</div>
+            <div class="indicator">
+              <i class='bx bx-up-arrow-alt'></i>
+              <span class="text">En el mes</span>
+            </div>
+          </div>
+          <i class='bx bx-cart cart three' ></i>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Total Devoluciones</div>
+            <div class="number">11086</div>
+            <div class="indicator">
+              <i class='bx bx-down-arrow-alt down'></i>
+              <span class="text">Hasta hoy</span>
+            </div>
+          </div>
+          <i class='bx bxs-cart-download cart four' ></i>
+        </div>
+      </div>
+        <!-- WIDGET PARA VENTAS RECIENTES Y ESTADISTICA DE PRODUCTOS MAS VENDIDOS CON IMAGENES-->
+      <div class="sales-boxes">
+        <div class="recent-sales box">
+          <div class="title">Ventas Recientes</div>
+          <div class="sales-details">
+              <ul class="details">
+                <li class="topic">Fecha</li>
+                <li>02 Diciembre 2022</li>
+                <li>02 Diciembre 2022</li>
+                <li>02 Diciembre 2022</li>
+                <li>02 Diciembre 2022</li>
+                <li>02 Diciembre 2022</li>
+                <li>02 Diciembre 2022</li>
+                
+              </ul>
+              <ul class="details">
+                <li class="topic">Clientes</li>
+                <li>Alejandra Garcia</li>
+                <li>David Martinez</li>
+                <li>Roberto Petersen</li>
+                <li>Diana Rodriguez</li>
+                <li>Martin Perez</li>
+                <li>Daniela Lopez</li>            
+              </ul>
+              <ul class="details">
+                <li class="topic">Ventas</li>
+                <li>Enviado</li>
+                <li>Pendiente</li>
+                <li>Devolucion</li>
+                <li>Enviado</li>
+                <li>Pendiente</li>
+                <li>Devolucion</li>
+                
+              </ul>
+              <ul class="details">
+                <li class="topic">Total</li>
+                <li>$20498</li>
+                <li>$2455</li>
+                <li>$2588</li>
+                <li>$17066</li>
+                <li>$5656</li>
+                <li>$4495</li>            
+                
+              </ul>
+            </div>
+              <div class="button">
+                <a href="#">Ver Todo</a>
+            
+              </div>
+          </div> 
+        
+        <div class="top-sales box">
+          <div class="title">Productos mas Vendidos</div>
+          <ul class="top-sales-details">
+            <li>
+              <a href="img/louis-vuitton.jpg" target=" blank">
+             <!--   <img src="img/louis-vuitton.jpg" alt="lentes">-->
+              <span class="product"> LentesVuitton </span>
+            </a>
+            
+            <span class="price">$21070</span>
+          </li>
+          <li>
+            <a href="img/jean-tucci.jpeg" target=" blank">
+               <!--<img src="imagen/jean-tucci.jpg" alt="">-->
+              <span class="product"> Tucci Jean </span>
+            </a>
+            <span class="price">$15670</span>
+          </li>
+          <li>
+            <a href="img/zapatilla-nike.jpg" target=" blank">
+             <!-- <img src="imagen/zapatilla-nike.jpg" alt="">-->
+              <span class="product"> Zapatillas Nike </span>
+            </a>
+            <span class="price">$12340</span>
+          </li>
+          <li>
+            <a href="img/cinturon-hermes.jpg" target=" blank">
+              <!--<img src="imagen/cinturon-hermes.jpg" alt="">-->
+              <span class="product"> Cinturon Hermes </span>
+            </a>
+            <span class="price">$23120</span>
+          </li>
+          <li>
+            <a href="img/cartera-prune.jpg" target=" blank">
+              <!--<img src="imagen/cartera-prune.jpg" alt="">-->
+              <span class="product"> Cartera Prune</span>
+            </a>
+            <span class="price">$14560</span>
+          </li>
+          <li>
+            <a href="img/billetera-gucci.jpg" target=" blank">
+              <!--<img src="imagen/billetera-gucci.jpg" alt="">-->
+              <span class="product"> Billetera Gucci </span>
+            </a>
+            <span class="price">$23450</span>
+          <li>
+            <a href="img/zapatilla-adidas.jpg" target=" blank">
+              <!--<img src="imagen/zapatilla-addidas.jpg" alt="">-->
+              <span class="product">Adidas  Zapatillas Running </span>
+            </a>
+            <span class="price">$23450</span>
+          </li>
+          <li>
+            <a href="img/camisa-zara.jpg"target=" blank">
+             <!--<img src="imagen/camisa-zara.jpg" alt="">-->
+              <span class="product">Camisa Zara</span>
+            </a>
+            <span class="price">$12450</span>
+          </li>
+          </ul>
+        </div>
+      </div>
+       <!-- WIDGET PARA GRAFICO DE BARRAS CON DATOS POR MES -->
+      <div class="widget-monthbar">
+        <div class="monthbar-month">
+            <div class="month-bar" style="height:20px"></div>
+            <div class="month-name">Ene</div>
+        </div>
+        <div class="monthbar-month">
+            <div class="month-bar" style="height:40px"></div>
+            <p class="month-name">Feb</p>
+        </div>
+        <div class="monthbar-month">
+            <div class="month-bar" style="height:20px"></div>
+            <div class="month-name">Mar</div>
+        </div>
+        <div class="monthbar-month">
+            <div class="month-bar" style="height:60px"></div>
+            <p class="month-name">Abr</p>
+        </div>
+        <div class="monthbar-month">
+            <div class="month-bar" style="height:10px"></div>
+            <div class="month-name">May</div>
+        </div>
+        <div class="monthbar-month">
+            <div class="month-bar" style="height:30px"></div>
+            <p class="month-name">Jun</p>
+        </div>
+        <div class="monthbar-month">
+            <div class="month-bar" style="height:30px"></div>
+            <div class="month-name">Jul</div>
+        </div>
+        <div class="monthbar-month">
+            <div class="month-bar" style="height:40px"></div>
+            <p class="month-name">Ago</p>
+        </div>
+        <div class="monthbar-month">
+            <div class="month-bar" style="height:10px"></div>
+            <div class="month-name">Sep</div>
+        </div>
+        <div class="monthbar-month">
+            <div class="month-bar" style="height:60px"></div>
+            <p class="month-name">Oct</p>
+        </div>
+        <div class="monthbar-month">
+            <div class="month-bar" style="height:50px"></div>
+            <div class="month-name">Nov</div>
+        </div>
+        <div class="monthbar-month">
+            <div class="month-bar" style="height:70px"></div>
+            <p class="month-name">Dic</p>
+        </div>
+    </div>
+    
+  </section>
+
+</body>
+
+</html>
+

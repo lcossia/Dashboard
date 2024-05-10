@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" >
+  <head>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" href="css/style.css">
+   <!-- Boxicons Link -->
+   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap')"
+   rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+ <!-- Barra Iconos -->
+  <div class="sidebar">
+    <div class="logo-details">
+      <span class="logo_name"> Passage</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="index.html" >
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name1"> Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-box' ></i>
+            <span class="links_name">Productos</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-list-ul' ></i>
+            <span class="links_name">Lista de Pedidos</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-pie-chart-alt-2' ></i>
+            <span class="links_name">Estadisticas de ventas</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-coin-stack' ></i>
+            <span class="links_name">Stock</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="links_name">Total ventas</span>
+          </a>
+        </li>
+        <!--INTEGRANTES DEL TRABAJO FINAL-->
+        <li>
+          <a href="members.html" >
+          <i class='bx bx-user' ></i>
+          <span class="links_name1">Nuestro Equipo </span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-message' ></i>
+            <span class="links_name">Mensajes</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-heart' ></i>
+            <span class="links_name">Favoritos</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-cog' ></i>
+            <span class="links_name">Configuracion</span>
+          </a>
+        </li>
+        <li class="log_out">
+          <a href="https://www.google.com/?hl=es">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name1">Salir</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <!-- Barra Titulo  Navegador y Usuario -->
+  <section class="home-section">
+    <nav>
+      <div class="dashboard"> <h1>Trabajo Final Dashboard</h1> </div>
+      <div class="search-box">
+        <input type="text" placeholder="Buscador...">
+        <i class='bx bx-search' ></i>
+      </div>
+      <button class="profile-details">            
+        <a href="formulario1.html" class="active"> USUARIO </a>
+        
+      </button>
+    </nav>
+   
+    <div class="home-content">
+         
+       <!--Formulario Usuario-->
+      <div class="sales-boxes">
+        <div class="recent-sales box">
+          <div class="title">Formulario Usuario:</div>
+          <div class="sales-details">
+            <main>
+                <form action="servidor.html" method="POST"> <!--method =get menos privacidad -->
+                   <ul>
+                       <li>
+                           <i class='bx bx-user' ></i>
+                           <label for ="inNombreUsuario"> Nombre usuario:</label>
+                           <input type="text" id="inNombreUsuario" placeholder="Ej: usu123" name="nombre_usuario" required>
+                           <!-- required es para decir que es un campo obligatorio y dice completar el campo -->
+                       </li>
+                       <li>
+                           <i class='bx bx-mail-send' ></i>
+                           <label for="inEmail"> Correo Electronico:</label>
+                           <input type="email" id="inEmail" name="email_usuario" placeholder=" usu123@gmail">
+
+                       </li>
+                       <li>
+                           <i class='bx bx-lock-open' ></i>
+                           <label for="inPassword"> Contrasena </label>
+                           <input type="password" id="inPassword" placeholder= "usu123" name="password_usuario" required>
+       
+                       </li>
+                      
+                       <li>
+                           <i class='bx bx-envelope-open' ></i>
+                           <label for="chkmails"> Quiero recibir mails</label>
+                           <input type="checkbox" id="chkmails" name="chequear-mail" >
+
+                       </li>
+                       <li>
+                           <i class='bx bx-card' ></i>
+                           <label for="chkTerminos"> TARJETAS DE DEBITO</label>
+                           <input type="radio" id="chkTerminos" name="terminos_uso" >
+                           <i class='bx bx-credit-card' ></i>
+                           <label for="chkTerminos"> TARJETAS DE CREDITO </label>
+                           <input type="radio" id="chkTerminos" name="terminos_uso" >
+                           <select>
+
+                               <option>VISA </option>
+                               <option>MASTERCARD</option>
+                               <option>AMERICAN EXPRESS</option>
+                           
+                           </select>
+                       </li>
+                       <li>
+                           <label for="op_3"> 3 </label>
+                           <input type="radio" name="opcion_pago" value="3" id="op_3">
+
+                           <label for="op_6"> 6 </label>
+                           <input type="radio" name="opcion_pago" value="6" id="op_6">
+
+                           <label for="op_12"> 12 </label>
+                           <input type="radio" name="opcion_pago" value="12"id="op_12">
+                           <!-- opcion radio es parav q sea 1 u otro no marcar todo -->
+                       </li>
+                       <li>
+                       <i class='bx bx-cycling' ></i>
+                       <label for="chkTerminos"> FORMAS DE ENVIO</label>
+                       <select>
+
+                           <option>ENTREGA A DOMICILIO </option>
+                           <option>RETIRO EN SUCURSAL CORREO</option>
+                           <option>RETIRO LOCAL</option>
+                       
+                       </select>
+                   </li>
+                       <li>
+                           <i class='bx bx-send' ></i>
+                           <button >  <!-- boton para enviar info -->
+                           <a href="enviar.html" class="active">Enviar  </a>
+                          </button>
+                       </li>
+                       <li>
+                           <i class='bx bx-reset' ></i>
+                           <button type="reset">Restablecer</button><!-- boton para borrar info -->
+                           
+                       </li>
+                   </ul>
+                                                      
+               </form>
+
+           </main>
+
+            </div>
+         
+              
+        </div> 
+               
+      </div>
+       
+    </div>
+    
+  </section>
+
+</body>
+
+</html>
+
